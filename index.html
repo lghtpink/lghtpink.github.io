@@ -2,212 +2,311 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:title" content="Rachelle Mae Arroyo Lillo | Nursing Portfolio">
-<meta property="og:description" content="Graduate Registered Nurse Portfolio showcasing clinical placements, nursing philosophy, and professional achievements.">
-<meta property="og:image" content="https://rachellelillo.com/preview.jpg">
-<meta property="og:url" content="https://rachellelillo.com">
-<meta property="og:type" content="website">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Rachelle Mae Arroyo Lillo | Nursing Portfolio">
-<meta name="twitter:description" content="Graduate Registered Nurse Portfolio showcasing clinical placements, nursing philosophy, and professional achievements.">
-<meta name="twitter:image" content="https://rachellelillo.com/preview.jpg">
 
 <title>Rachelle Mae Arroyo Lillo | Nursing Portfolio</title>
 
+<meta property="og:title" content="Rachelle Mae Arroyo Lillo | Nursing Portfolio">
+<meta property="og:description" content="Graduate Registered Nurse ePortfolio">
+<meta property="og:image" content="https://rachellelillo.com/preview.jpg">
+<meta property="og:url" content="https://rachellelillo.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 
-* {
-    box-sizing: border-box;
-    scroll-behaviour: smooth;
+html{
+scroll-behavior:smooth;
 }
 
-body {
-    margin: 0;
-    font-family: "Inter", "Arial", sans-serif;
-    background: #ffffff;
-    color: #333333;
-    line-height: 1.7;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
+body{
 
-/* Navigation */
-
-nav {
-    position: sticky;
-    top: 0;
-    background: rgba(255,255,255,0.95);
-    padding: 18px;
-    text-align: center;
-    border-bottom: 1px solid #eeeeee;
-    z-index: 1000;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333333;
-    margin: 0 12px;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-nav a:hover {
-    color: #d88c98;
-}
-
-
-/* Hero */
-
-.hero {
-    background: #f2c6c8;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.profile {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid white;
-}
-
-.hero h1 {
-    margin-top: 25px;
-    font-size: 42px;
-    letter-spacing: 1px;
-}
-
-.hero h3 {
-    font-weight: 400;
-}
-
-
-.button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 25px;
-    background: white;
-    color: #333;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-
-/* Sections */
-
-section {
-
-    max-width: 1000px;
-    margin: auto;
-    padding: 70px 25px;
+font-family:"Inter",sans-serif;
+background:white;
+color:#444;
+line-height:1.8;
 
 }
 
-
-h2 {
-
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 35px;
-
+a{
+text-decoration:none;
+color:inherit;
 }
 
+nav{
 
-.card {
+position:sticky;
+top:0;
 
-    background: #fafafa;
-    padding: 25px;
-    border-radius: 15px;
-    margin-bottom: 20px;
+background:rgba(255,255,255,.95);
 
-}
+backdrop-filter:blur(15px);
 
+display:flex;
+justify-content:center;
+gap:35px;
 
-.timeline {
+padding:18px;
 
-    border-left: 3px solid #f2c6c8;
-    padding-left: 25px;
+border-bottom:1px solid #ececec;
 
-}
+z-index:999;
 
-
-.grid {
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 20px;
-
-}
-
-
-.skill {
-
-    background:#fdf2f3;
-    padding:25px;
-    text-align:center;
-    border-radius:15px;
-}
-
-
-.badge {
-
-    display:inline-block;
-    background:#f2c6c8;
-    padding:8px 15px;
-    border-radius:20px;
-    margin:5px;
-
-}
-
-
-footer {
-
-    background:#f2c6c8;
-    text-align:center;
-    padding:30px;
-
-}
-
-
-@media(max-width:700px){
-
-.hero h1{
-    font-size:32px;
 }
 
 nav a{
-    display:inline-block;
-    margin:5px;
-}
+
+font-size:14px;
+font-weight:600;
+transition:.3s;
 
 }
 
+nav a:hover{
+
+color:#d88c98;
+
+}
+
+.hero{
+
+background:#f2c6c8;
+
+padding:90px 20px;
+
+text-align:center;
+
+}
+
+.profile{
+
+width:170px;
+height:170px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:6px solid white;
+
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.hero h1{
+
+margin-top:30px;
+
+font-size:44px;
+
+font-weight:700;
+
+color:#2f2f2f;
+
+}
+
+.hero h3{
+
+margin-top:10px;
+
+font-weight:400;
+
+}
+
+.hero p{
+
+margin-top:18px;
+
+font-size:18px;
+
+}
+
+.button{
+
+display:inline-block;
+
+margin-top:35px;
+
+background:white;
+
+padding:14px 28px;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+transform:translateY(-2px);
+
+}
+
+section{
+
+max-width:1050px;
+
+margin:auto;
+
+padding:90px 25px;
+
+}
+
+h2{
+
+text-align:center;
+
+font-size:34px;
+
+margin-bottom:50px;
+
+color:#333;
+
+}
+
+.card{
+
+background:#fafafa;
+
+border-radius:18px;
+
+padding:35px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+margin-bottom:25px;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+gap:22px;
+
+}
+
+.value{
+
+background:#fff7f8;
+
+padding:30px;
+
+border-radius:16px;
+
+text-align:center;
+
+}
+
+.value h3{
+
+margin-bottom:12px;
+
+}
+
+.snapshot{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:18px;
+
+margin-top:35px;
+
+}
+
+.stat{
+
+background:#fdf4f5;
+
+border-radius:16px;
+
+padding:30px;
+
+text-align:center;
+
+}
+
+.stat h1{
+
+font-size:38px;
+
+color:#d88c98;
+
+}
+
+footer{
+
+background:#f2c6c8;
+
+text-align:center;
+
+padding:35px;
+
+margin-top:80px;
+
+}
+
+@media(max-width:700px){
+
+nav{
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+}
 
 </style>
 
 </head>
 
-
 <body>
-
 
 <nav>
 
-<a href="#about">About</a>
-<a href="#philosophy">Philosophy</a>
+<a href="#welcome">Welcome</a>
+
 <a href="#employment">Employment</a>
-<a href="#placements">Placements</a>
-<a href="#skills">Skills</a>
-<a href="#achievements">Achievements</a>
+
+<a href="#reflections">Reflections</a>
+
+<a href="#competence">Competence</a>
+
+<a href="#culture">Te Tiriti</a>
+
+<a href="#development">Development</a>
+
+<a href="#future">Future</a>
+
 <a href="#contact">Contact</a>
 
 </nav>
-
-
 
 <div class="hero">
 
@@ -215,108 +314,171 @@ nav a{
 
 <h1>Rachelle Mae Arroyo Lillo</h1>
 
-<h3>
-Bachelor of Nursing Student<br>
-Manukau Institute of Technology
-</h3>
+<h3>Graduate Registered Nurse Portfolio</h3>
 
 <p>
-Compassionate. Culturally Safe. Evidence Based.
+Bachelor of Nursing • Manukau Institute of Technology
 </p>
 
+<a href="#employment" class="button">
 
-<a class="button" href="#employment">
 View Employment Package
+
 </a>
 
-
 </div>
 
+<section id="welcome">
 
-
-
-<section id="about">
-
-<h2>About Me</h2>
+<h2>Nau mai, haere mai • Welcome</h2>
 
 <div class="card">
 
 <p>
-I am a final year Bachelor of Nursing student at Manukau Institute of Technology with a passion for providing compassionate, person-centred, and culturally safe care. My background in Psychology and clinical research has strengthened my understanding of holistic healthcare, communication, and patient advocacy.
+
+Kia ora, my name is <strong>Rachelle Mae Arroyo Lillo</strong>, and welcome to my nursing e portfolio.
+
 </p>
+
+<br>
 
 <p>
-Through clinical placements across medical, surgical, child health, mental health and community settings, I have developed skills in clinical reasoning, comprehensive assessment, therapeutic communication, and multidisciplinary teamwork. I am committed to lifelong learning and growing as a reflective practitioner.
+
+I am a final year Bachelor of Nursing student at Manukau Institute of Technology with a genuine passion for providing compassionate, person centred care. My background in Psychology and my experiences across mental health, paediatric, medical, surgical, and community placements have shaped the nurse I am today.
+
+</p>
+
+<br>
+
+<p>
+
+This portfolio showcases my professional journey throughout the Bachelor of Nursing programme. It brings together my employment package, clinical reflections, evidence of learning, and examples of how I apply Te Tiriti o Waitangi and culturally safe practice throughout my clinical experiences.
+
+</p>
+
+<br>
+
+<p>
+
+My nursing kaupapa is grounded in compassion, partnership, respect, and lifelong learning. I strive to provide safe, evidence informed care that recognises every person's unique values, culture, and health journey.
+
 </p>
 
 </div>
-
-
-<div class="timeline">
-
-<p><strong>2019 to 2022</strong><br>
-Bachelor of Science Psychology</p>
-
-<p><strong>2023 to Present</strong><br>
-Clinical Trials Administrative Assistant</p>
-
-<p><strong>2024 to 2026</strong><br>
-Bachelor of Nursing<br>
-Manukau Institute of Technology</p>
-
-<p><strong>2026</strong><br>
-Graduate Registered Nurse</p>
-
-</div>
-
 
 </section>
 
+<section>
 
+<h2>My Nursing Values</h2>
 
+<div class="grid">
 
+<div class="value">
 
-<section id="philosophy">
-
-<h2>Personal Nursing Philosophy</h2>
-
-
-<div class="card">
-
+<h3>Compassion</h3>
 
 <p>
-My decision to become a nurse grew from my interest in understanding people through Psychology and was strengthened during my nursing placements, where I saw the difference compassionate nursing care can make during vulnerable moments of a person's life.
+
+Providing kind, respectful and person centred care while supporting patients and whānau during vulnerable moments.
+
 </p>
-
-
-<p>
-I believe nursing is more than completing clinical tasks. It is about building trust, showing compassion, advocating for others and treating every person with dignity and respect.
-</p>
-
-
-<p>
-My practice is guided by person centred care, evidence based practice, Jean Watson's Theory of Human Caring and the principles of Te Tiriti o Waitangi.
-</p>
-
-
-<p>
-I am committed to providing culturally safe care through partnership, protection, participation, options and tino rangatiratanga while supporting equitable health outcomes for Māori and all communities.
-</p>
-
 
 </div>
 
+<div class="value">
+
+<h3>Partnership</h3>
+
+<p>
+
+Working alongside patients, whānau and colleagues to achieve the best possible health outcomes.
+
+</p>
+
+</div>
+
+<div class="value">
+
+<h3>Lifelong Learning</h3>
+
+<p>
+
+Continuously developing my clinical knowledge through reflection, feedback and evidence based practice.
+
+</p>
+
+</div>
+
+<div class="value">
+
+<h3>Cultural Safety</h3>
+
+<p>
+
+Delivering inclusive care guided by Te Tiriti o Waitangi and respect for every person's identity and culture.
+
+</p>
+
+</div>
+
+</div>
 
 </section>
 
+<section>
 
+<h2>Clinical Snapshot</h2>
 
+<div class="snapshot">
 
+<div class="stat">
 
+<h1>4</h1>
+
+<p>Clinical Placements</p>
+
+</div>
+
+<div class="stat">
+
+<h1>3+</h1>
+
+<p>Years Clinical Research Experience</p>
+
+</div>
+
+<div class="stat">
+
+<h1>2</h1>
+
+<p>Degrees in Psychology</p>
+
+</div>
+
+<div class="stat">
+
+<h1>2026</h1>
+
+<p>Graduate Registered Nurse</p>
+
+</div>
+
+</div>
+
+</section>
 
 <section id="employment">
 
 <h2>Employment Package</h2>
+
+<div class="card">
+
+<p>
+This section contains my complete graduate nursing employment package prepared for the MIT Transition Healthcare Graduate Registered Nurse application. These documents demonstrate my professional readiness, clinical experiences, nursing values, and commitment to culturally safe practice.
+</p>
+
+</div>
 
 
 <div class="grid">
@@ -326,9 +488,13 @@ I am committed to providing culturally safe care through partnership, protection
 
 <h3>Curriculum Vitae</h3>
 
-<p>Professional nursing CV outlining education, clinical placements, employment history and achievements.</p>
+<p>
+A summary of my education, clinical placements, employment history, professional skills, and achievements throughout my nursing journey.
+</p>
 
-<a href="CV.pdf">
+<br>
+
+<a href="CV.pdf" target="_blank" class="button">
 View CV
 </a>
 
@@ -340,9 +506,13 @@ View CV
 
 <h3>Cover Letter</h3>
 
-<p>Graduate Registered Nurse application for MIT Transition Healthcare.</p>
+<p>
+My Graduate Registered Nurse application outlining my clinical preferences, professional strengths, and alignment with MIT Healthcare values.
+</p>
 
-<a href="Cover Letter.pdf">
+<br>
+
+<a href="Cover Letter.pdf" target="_blank" class="button">
 View Cover Letter
 </a>
 
@@ -354,10 +524,326 @@ View Cover Letter
 
 <h3>Nursing Philosophy</h3>
 
-<p>Personal nursing values, beliefs and incorporation of Te Tiriti o Waitangi.</p>
+<p>
+My personal nursing philosophy describing my values, beliefs, approach to care, and incorporation of Te Tiriti o Waitangi principles.
+</p>
 
-<a href="Nursing Philosophy.pdf">
+<br>
+
+<a href="Nursing Philosophy.pdf" target="_blank" class="button">
 View Philosophy
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section id="reflections">
+
+<h2>Clinical Reflections</h2>
+
+
+<div class="card">
+
+<h3>
+Developing Assessment and Therapeutic Skills in Child and Adolescent Mental Health
+</h3>
+
+<p>
+<strong>Haumaru Orite • Child and Family Unit, Starship, Auckland City Hospital</strong>
+</p>
+
+<br>
+
+<p>
+During my placement in the Child and Family Unit, I supported adolescents experiencing acute mental distress. This experience highlighted the importance of creating safe spaces where young people feel respected, listened to, and supported.
+</p>
+
+<br>
+
+<p>
+Through therapeutic communication, I developed my ability to build trusting relationships with tamariki and whānau. I learned that effective mental health nursing involves more than completing assessments. It requires patience, empathy, and understanding each person's unique experiences.
+</p>
+
+<br>
+
+<p>
+I progressed from observing Mental State Examinations to completing comprehensive assessments and structured risk assessments under supervision. This strengthened my confidence in clinical reasoning and reinforced the importance of recovery focused and least restrictive care.
+</p>
+
+<br>
+
+<p>
+This placement contributed to my growth in <strong>Whanaungatanga, Manaakitanga, and Pūkengatanga</strong> by developing my communication skills, clinical judgement, and ability to provide safe and supportive care.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+Recognising Deterioration and Advocating for Patient Safety in Paediatric Medical Care
+</h3>
+
+<p>
+<strong>Kidz First Medical Ward • Middlemore Hospital</strong>
+</p>
+
+<br>
+
+<p>
+My placement at Kidz First strengthened my ability to assess and respond to the changing needs of tamariki with a range of acute and chronic conditions.
+</p>
+
+<br>
+
+<p>
+A key learning experience was developing confidence in recognising early signs of deterioration through systematic assessment and use of the Early Warning Score. I learned the importance of acting promptly, communicating concerns clearly, and seeking support when required.
+</p>
+
+<br>
+
+<p>
+Working alongside Registered Nurses and the wider multidisciplinary team strengthened my understanding of advocacy and accountability. I recognised that safe nursing care involves not only clinical knowledge but also ensuring children and their whānau feel included and supported throughout their healthcare journey.
+</p>
+
+<br>
+
+<p>
+This experience developed my skills in <strong>clinical reasoning, prioritisation, communication, and patient advocacy</strong> while reinforcing the importance of family centred care.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+Supporting Recovery Through Assessment and Education in Paediatric Surgical Care
+</h3>
+
+<p>
+<strong>Orthopaedics Ward 24A • Starship, Auckland City Hospital</strong>
+</p>
+
+<br>
+
+<p>
+During my surgical placement, I developed my understanding of post operative nursing care for tamariki following orthopaedic procedures. I focused on assessment, pain management, wound care, and supporting recovery.
+</p>
+
+<br>
+
+<p>
+Completing wound assessments, monitoring recovery progress, and assessing pain using validated tools strengthened my attention to detail and ability to identify changes requiring further review.
+</p>
+
+<br>
+
+<p>
+I also supported tamariki and whānau through education about wound care, mobility, and recovery expectations. This showed me the importance of clear communication and ensuring families feel confident and involved in the care process.
+</p>
+
+<br>
+
+<p>
+This placement strengthened my development in <strong>Manaakitanga and Pūkengatanga</strong> by combining clinical skills with compassionate, family centred communication.
+</p>
+
+</div>
+
+
+</section>
+
+<section id="competence">
+
+<h2>Evidence of Clinical Competence</h2>
+
+
+<div class="card">
+
+<p>
+Throughout my Bachelor of Nursing programme, I have developed my clinical skills through supervised practice, feedback, and reflective learning. The following examples demonstrate my progression towards safe and effective Registered Nurse practice.
+</p>
+
+</div>
+
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>Mental Health Assessment and Therapeutic Communication</h3>
+
+<p>
+During my Child and Family Mental Health placement at Haumaru Orite, I developed confidence in completing Mental State Examinations and structured risk assessments under supervision. This experience strengthened my ability to communicate therapeutically, build rapport, and contribute to recovery focused care planning.
+</p>
+
+<br>
+
+<p>
+<strong>Related NCNZ Competencies:</strong><br>
+Domain 1: Professional Responsibility<br>
+Domain 2: Management of Nursing Care
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Recognising and Responding to Deterioration</h3>
+
+<p>
+During my paediatric medical placement at Kidz First, I developed my ability to recognise changes in a child's condition through systematic assessment and Early Warning Score observations. I learned the importance of timely escalation, clear communication, and advocating for patient safety.
+</p>
+
+<br>
+
+<p>
+<strong>Related NCNZ Competencies:</strong><br>
+Domain 2: Management of Nursing Care<br>
+Domain 3: Interpersonal Relationships
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Post Operative Care and Patient Education</h3>
+
+<p>
+During my orthopaedic surgical placement at Starship, I developed skills in wound assessment, post operative monitoring, pain assessment, and providing education to tamariki and whānau. This strengthened my understanding of safe recovery and family centred care.
+</p>
+
+<br>
+
+<p>
+<strong>Related NCNZ Competencies:</strong><br>
+Domain 2: Management of Nursing Care<br>
+Domain 4: Interprofessional Health Care and Quality Improvement
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Medication Safety</h3>
+
+<p>
+Across my clinical placements, I developed confidence in medication administration under Registered Nurse supervision. I applied the principles of safe medication practice, including checking the rights of medication administration and monitoring patient responses.
+</p>
+
+<br>
+
+<p>
+This reinforced the importance of accuracy, accountability, and patient safety in nursing practice.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+<h2 style="margin-top:70px;">Clinical Evidence Documents</h2>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>Child and Family Mental Health Feedback</h3>
+
+<p>
+Clinical feedback demonstrating my development in therapeutic communication, assessment skills, professional behaviour, and mental health nursing practice.
+</p>
+
+<br>
+
+<a href="Mental Health Feedback.pdf" target="_blank" class="button">
+View Evidence
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Paediatric Medical Feedback</h3>
+
+<p>
+Clinical feedback demonstrating my progress in assessment, prioritisation, escalation of care, and working alongside the multidisciplinary team.
+</p>
+
+<br>
+
+<a href="Medical Feedback.pdf" target="_blank" class="button">
+View Evidence
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Paediatric Surgical Feedback</h3>
+
+<p>
+Clinical feedback demonstrating my development in post operative care, patient education, communication, and safe nursing practice.
+</p>
+
+<br>
+
+<a href="Surgical Feedback.pdf" target="_blank" class="button">
+View Evidence
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Record of Learning</h3>
+
+<p>
+A collection of my clinical learning achievements, reflections, and progress throughout the Bachelor of Nursing programme.
+</p>
+
+<br>
+
+<a href="Record of Learning.pdf" target="_blank" class="button">
+View Evidence
 </a>
 
 </div>
@@ -373,11 +859,129 @@ View Philosophy
 
 
 
+<section id="culture">
 
-<section id="placements">
+<h2>Cultural Safety & Te Tiriti o Waitangi</h2>
 
 
-<h2>Clinical Placement Experience</h2>
+
+<div class="card">
+
+
+<p>
+As a nurse in Aotearoa New Zealand, I recognise Te Tiriti o Waitangi as fundamental to providing safe, equitable, and culturally responsive healthcare. Kawa Whakaruruhau guides my commitment to understanding the impact of culture, power, and personal beliefs on nursing practice.
+</p>
+
+
+<br>
+
+
+<p>
+I understand that culturally safe care begins with self reflection and recognising each person as an individual with their own values, experiences, beliefs, and identity. Throughout my clinical placements, I have aimed to provide care that respects patients and whānau while supporting their involvement in healthcare decisions.
+</p>
+
+
+</div>
+
+
+
+
+<div class="grid">
+
+
+<div class="value">
+
+<h3>Partnership</h3>
+
+<p>
+Working alongside Māori patients and whānau through respectful communication, shared decision making, and recognising their knowledge of their own health experiences.
+</p>
+
+</div>
+
+
+
+
+<div class="value">
+
+<h3>Active Protection</h3>
+
+<p>
+Supporting equitable health outcomes by providing culturally safe care, reflecting on personal biases, and advocating against barriers to healthcare.
+</p>
+
+</div>
+
+
+
+
+<div class="value">
+
+<h3>Participation</h3>
+
+<p>
+Encouraging Māori patients and whānau to actively participate in planning and decisions about their healthcare.
+</p>
+
+</div>
+
+
+
+
+<div class="value">
+
+<h3>Options</h3>
+
+<p>
+Respecting individual preferences and supporting access to healthcare pathways that align with cultural values and needs.
+</p>
+
+</div>
+
+
+
+
+<div class="value">
+
+<h3>Tino Rangatiratanga</h3>
+
+<p>
+Respecting Māori self determination and supporting patients to have control and involvement in decisions affecting their health and wellbeing.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="card" style="margin-top:30px;">
+
+<p>
+These principles guide my nursing practice across mental health, medical, surgical, and community settings. I recognise that culturally safe practice requires ongoing learning, humility, and reflection. As a graduate nurse, I will continue developing my understanding of Te Tiriti o Waitangi and apply these principles to provide respectful and equitable care.
+</p>
+
+</div>
+
+
+</section>
+
+<section id="development">
+
+<h2>Professional Development & Achievements</h2>
+
+
+<div class="card">
+
+<p>
+My journey into nursing has been shaped by academic learning, clinical experiences, and professional opportunities outside of healthcare. These experiences have developed my communication skills, accountability, attention to detail, and commitment to continuous improvement.
+</p>
+
+</div>
+
+
 
 
 <div class="grid">
@@ -385,64 +989,85 @@ View Philosophy
 
 <div class="card">
 
-<h3>Haumaru Orite</h3>
+<h3>Academic Achievements</h3>
 
 <p>
-Child and Adolescent Mental Health<br><br>
 
-• Mental State Examination<br>
-• Risk Assessment<br>
-• Recovery focused care<br>
-• Whānau centred communication
+<strong>Graduated with Honours (2022)</strong><br>
+Recognised for academic achievement and commitment to maintaining high standards of learning.
+
+</p>
+
+<br>
+
+<p>
+
+<strong>Best in Research (2019)</strong><br>
+Recognised for research ability, analytical thinking, and effective use of information.
+
+</p>
+
+<br>
+
+<p>
+
+<strong>Young Mathematicians In-House Intensive Training Programme & International Kangaroo Mathematics Competition (2018 to 2019)</strong><br>
+Developed logical thinking, problem solving skills, and the ability to perform under pressure.
+
 </p>
 
 </div>
 
 
 
+
 <div class="card">
 
-<h3>Kidz First Medical</h3>
+<h3>Clinical Research Experience</h3>
 
 <p>
-Paediatric Medical Ward<br><br>
 
-• Early Warning Score assessment<br>
-• Clinical prioritisation<br>
-• Patient advocacy<br>
-• Escalation of care
+As a Clinical Trials Administrative Assistant at Optimal Clinical Trials, I have developed an understanding of ethical healthcare practice, confidentiality, accuracy, and professional responsibility.
+
+</p>
+
+<br>
+
+<p>
+
+Working with clinical trial documentation and participant information has strengthened my attention to detail and reinforced the importance of safe, evidence based healthcare.
+
+</p>
+
+<br>
+
+<p>
+
+These skills complement my nursing practice by supporting accurate documentation, patient safety, and accountable decision making.
+
 </p>
 
 </div>
 
 
 
+
 <div class="card">
 
-<h3>Orthopaedics</h3>
+<h3>Communication and Customer Service Experience</h3>
 
 <p>
-Starship Surgical Ward<br><br>
 
-• Wound assessment<br>
-• Post operative monitoring<br>
-• Pain assessment
+My previous customer service roles have strengthened my ability to communicate with people from diverse backgrounds, remain calm under pressure, and create positive experiences for others.
+
 </p>
 
-</div>
-
-
-
-<div class="card">
-
-<h3>Endoscopy Suite</h3>
+<br>
 
 <p>
-Community and Primary Health<br><br>
 
-• Patient education<br>
-• Health promotion<br>
-• Evidence informed practice
+Working with children and families through Dragon Quest Lilliputt Mini Golf also developed my patience, adaptability, and ability to create a welcoming environment.
+
 </p>
 
 </div>
@@ -459,60 +1084,49 @@ Community and Primary Health<br><br>
 
 
 
-<section id="skills">
+<section id="future">
 
-<h2>Clinical Skills</h2>
-
-
-<div class="grid">
-
-
-<div class="skill">Clinical Reasoning</div>
-
-<div class="skill">Therapeutic Communication</div>
-
-<div class="skill">Cultural Safety</div>
-
-<div class="skill">Mental State Examination</div>
-
-<div class="skill">Patient Assessment</div>
-
-<div class="skill">Multidisciplinary Teamwork</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<section id="achievements">
-
-
-<h2>Achievements</h2>
+<h2>Future Goals as a Graduate Nurse</h2>
 
 
 <div class="card">
 
 
-<span class="badge">
-Graduated with Honours
-</span>
+<p>
+
+I aspire to become a Registered Nurse who provides compassionate, safe, and culturally responsive care. I want patients and their whānau to feel respected, supported, and confident throughout their healthcare journey.
+
+</p>
 
 
-<span class="badge">
-Best in Research
-</span>
+<br>
 
 
-<span class="badge">
-International Mathematics Competition
-</span>
+<p>
+
+During my first year as a Graduate Nurse, I aim to continue developing my confidence in clinical assessment, prioritisation, medication safety, and evidence informed decision making. I also hope to strengthen my ability to provide effective health education, advocate for patients, and contribute positively within multidisciplinary teams.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+While I have a strong interest in child and adolescent mental health, paediatric care, and community health, I am committed to continuing my learning across all areas of nursing practice. I believe every experience provides an opportunity to grow as a safe, reflective, and compassionate practitioner.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+My goal is to become a nurse who is trusted by patients, respected by colleagues, and committed to making a meaningful difference within the communities I serve.
+
+</p>
 
 
 </div>
@@ -528,16 +1142,16 @@ International Mathematics Competition
 
 <section id="contact">
 
-
 <h2>Contact</h2>
 
 
-<div class="card" style="text-align:center">
+<div class="card" style="text-align:center;">
 
 
-<p>
+<h3>
 Rachelle Mae Arroyo Lillo
-</p>
+</h3>
+
 
 <p>
 Bachelor of Nursing Student<br>
@@ -545,8 +1159,19 @@ Manukau Institute of Technology
 </p>
 
 
+<br>
+
+
 <p>
 Email: rachellemaelillo@gmail.com
+</p>
+
+
+<br>
+
+
+<p>
+Thank you for taking the time to view my nursing portfolio.
 </p>
 
 
@@ -559,14 +1184,18 @@ Email: rachellemaelillo@gmail.com
 
 
 
+
 <footer>
 
 <p>
 © 2026 Rachelle Mae Arroyo Lillo | Nursing Portfolio
 </p>
 
-</footer>
+<p>
+Built as part of my Bachelor of Nursing employment portfolio
+</p>
 
+</footer>
 
 
 </body>
