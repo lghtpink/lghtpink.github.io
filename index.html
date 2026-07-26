@@ -1,149 +1,565 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rachelle Mae Arroyo Lillo</title>
+<title>Rachelle Mae Arroyo Lillo | Nursing Portfolio</title>
 
 <style>
 
-body{
+* {
+    box-sizing: border-box;
+    scroll-behaviour: smooth;
+}
 
-font-family:Arial;
+body {
+    margin: 0;
+    font-family: "Inter", "Arial", sans-serif;
+    background: #ffffff;
+    color: #333333;
+    line-height: 1.7;
+}
 
-max-width:900px;
 
-margin:auto;
+/* Navigation */
 
-padding:40px;
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.95);
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid #eeeeee;
+    z-index: 1000;
+}
 
-background:#f8f8f8;
+nav a {
+    text-decoration: none;
+    color: #333333;
+    margin: 0 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
 
-line-height:1.6;
+nav a:hover {
+    color: #d88c98;
+}
+
+
+/* Hero */
+
+.hero {
+    background: #f2c6c8;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.profile {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.hero h1 {
+    margin-top: 25px;
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+.hero h3 {
+    font-weight: 400;
+}
+
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: white;
+    color: #333;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Sections */
+
+section {
+
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 25px;
 
 }
 
-header{
 
-text-align:center;
+h2 {
 
-padding:30px;
-
-}
-
-img{
-
-width:180px;
-
-border-radius:100px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
 
 }
 
-section{
 
-background:white;
+.card {
 
-padding:25px;
-
-margin-top:20px;
-
-border-radius:10px;
+    background: #fafafa;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
 
 }
 
-a{
 
-color:#0066cc;
+.timeline {
 
-text-decoration:none;
+    border-left: 3px solid #f2c6c8;
+    padding-left: 25px;
 
 }
+
+
+.grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+
+}
+
+
+.skill {
+
+    background:#fdf2f3;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+}
+
+
+.badge {
+
+    display:inline-block;
+    background:#f2c6c8;
+    padding:8px 15px;
+    border-radius:20px;
+    margin:5px;
+
+}
+
+
+footer {
+
+    background:#f2c6c8;
+    text-align:center;
+    padding:30px;
+
+}
+
+
+@media(max-width:700px){
+
+.hero h1{
+    font-size:32px;
+}
+
+nav a{
+    display:inline-block;
+    margin:5px;
+}
+
+}
+
 
 </style>
 
 </head>
 
+
 <body>
 
-<header>
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#philosophy">Philosophy</a>
+<a href="#employment">Employment</a>
+<a href="#placements">Placements</a>
+<a href="#skills">Skills</a>
+<a href="#achievements">Achievements</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+
+<div class="hero">
+
+<!-- Replace profile.jpg with your own photo -->
+
+<img src="images/profile.jpg" class="profile">
 
 <h1>Rachelle Mae Arroyo Lillo</h1>
 
-<h3>Graduate Registered Nurse</h3>
+<h3>
+Bachelor of Nursing Student<br>
+Manukau Institute of Technology
+</h3>
 
-<p>Bachelor of Nursing | Manukau Institute of Technology</p>
+<p>
+Compassionate. Culturally Safe. Evidence Based.
+</p>
 
-</header>
 
-<section>
+<a class="button" href="#employment">
+View Employment Package
+</a>
+
+
+</div>
+
+
+
+
+<section id="about">
 
 <h2>About Me</h2>
 
+<div class="card">
+
 <p>
-
-Welcome to my nursing e Portfolio.
-
-I am passionate about providing compassionate, culturally safe, and evidence based care.
-
-My experience across mental health, child health, medical, surgical and community nursing has strengthened my clinical reasoning, communication, and advocacy skills.
-
+I am a final year Bachelor of Nursing student at Manukau Institute of Technology with a passion for providing compassionate, person centred and culturally safe care. My background in Psychology and clinical research has strengthened my understanding of holistic healthcare, communication and patient advocacy.
 </p>
+
+<p>
+Through clinical placements across medical, surgical, child health, mental health and community settings, I have developed skills in clinical reasoning, comprehensive assessment, therapeutic communication and multidisciplinary teamwork. I am committed to lifelong learning and growing as a reflective practitioner.
+</p>
+
+</div>
+
+
+<div class="timeline">
+
+<p><strong>2019 to 2022</strong><br>
+Bachelor of Science Psychology</p>
+
+<p><strong>2023 to Present</strong><br>
+Clinical Trials Administrative Assistant</p>
+
+<p><strong>2024 to 2026</strong><br>
+Bachelor of Nursing<br>
+Manukau Institute of Technology</p>
+
+<p><strong>2026</strong><br>
+Graduate Registered Nurse</p>
+
+</div>
+
 
 </section>
 
-<section>
+
+
+
+
+<section id="philosophy">
+
+<h2>Personal Nursing Philosophy</h2>
+
+
+<div class="card">
+
+
+<p>
+My decision to become a nurse grew from my interest in understanding people through Psychology and was strengthened during my nursing placements, where I saw the difference compassionate nursing care can make during vulnerable moments of a person's life.
+</p>
+
+
+<p>
+I believe nursing is more than completing clinical tasks. It is about building trust, showing compassion, advocating for others and treating every person with dignity and respect.
+</p>
+
+
+<p>
+My practice is guided by person centred care, evidence based practice, Jean Watson's Theory of Human Caring and the principles of Te Tiriti o Waitangi.
+</p>
+
+
+<p>
+I am committed to providing culturally safe care through partnership, protection, participation, options and tino rangatiratanga while supporting equitable health outcomes for Māori and all communities.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="employment">
 
 <h2>Employment Package</h2>
 
-<ul>
 
-<li><a href="cv.pdf">Curriculum Vitae</a></li>
+<div class="grid">
 
-<li><a href="coverletter.pdf">Cover Letter</a></li>
 
-<li><a href="philosophy.pdf">Nursing Philosophy</a></li>
+<div class="card">
 
-</ul>
+<h3>Curriculum Vitae</h3>
+
+<p>Professional nursing CV outlining education, clinical placements, employment history and achievements.</p>
+
+<a href="documents/CV.pdf">
+View CV
+</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Cover Letter</h3>
+
+<p>Graduate Registered Nurse application for MIT Transition Healthcare.</p>
+
+<a href="documents/Cover Letter.pdf">
+View Cover Letter
+</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Nursing Philosophy</h3>
+
+<p>Personal nursing values, beliefs and incorporation of Te Tiriti o Waitangi.</p>
+
+<a href="documents/Nursing Philosophy.pdf">
+View Philosophy
+</a>
+
+</div>
+
+
+</div>
+
 
 </section>
 
-<section>
 
-<h2>Clinical Placements</h2>
 
-<ul>
 
-<li>Haumaru Orite Child and Adolescent Mental Health</li>
 
-<li>Endoscopy Suite Auckland City Hospital</li>
 
-<li>Kidz First Medical Ward</li>
 
-<li>Starship Orthopaedics</li>
+<section id="placements">
 
-</ul>
+
+<h2>Clinical Placement Experience</h2>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>Haumaru Orite</h3>
+
+<p>
+Child and Adolescent Mental Health<br><br>
+
+• Mental State Examination<br>
+• Risk Assessment<br>
+• Recovery focused care<br>
+• Whānau centred communication
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Kidz First Medical</h3>
+
+<p>
+Paediatric Medical Ward<br><br>
+
+• Early Warning Score assessment<br>
+• Clinical prioritisation<br>
+• Patient advocacy<br>
+• Escalation of care
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Orthopaedics</h3>
+
+<p>
+Starship Surgical Ward<br><br>
+
+• Wound assessment<br>
+• Post operative monitoring<br>
+• Pain assessment
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Endoscopy Suite</h3>
+
+<p>
+Community and Primary Health<br><br>
+
+• Patient education<br>
+• Health promotion<br>
+• Evidence informed practice
+</p>
+
+</div>
+
+
+</div>
+
 
 </section>
 
-<section>
 
-<h2>Professional Values</h2>
 
-<ul>
 
-<li>Compassion</li>
 
-<li>Advocacy</li>
 
-<li>Integrity</li>
 
-<li>Cultural Safety</li>
+<section id="skills">
 
-<li>Evidence Based Practice</li>
+<h2>Clinical Skills</h2>
 
-</ul>
+
+<div class="grid">
+
+
+<div class="skill">Clinical Reasoning</div>
+
+<div class="skill">Therapeutic Communication</div>
+
+<div class="skill">Cultural Safety</div>
+
+<div class="skill">Mental State Examination</div>
+
+<div class="skill">Patient Assessment</div>
+
+<div class="skill">Multidisciplinary Teamwork</div>
+
+
+</div>
+
 
 </section>
+
+
+
+
+
+
+
+<section id="achievements">
+
+
+<h2>Achievements</h2>
+
+
+<div class="card">
+
+
+<span class="badge">
+Graduated with Honours
+</span>
+
+
+<span class="badge">
+Best in Research
+</span>
+
+
+<span class="badge">
+International Mathematics Competition
+</span>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="contact">
+
+
+<h2>Contact</h2>
+
+
+<div class="card" style="text-align:center">
+
+
+<p>
+Rachelle Mae Arroyo Lillo
+</p>
+
+<p>
+Bachelor of Nursing Student<br>
+Manukau Institute of Technology
+</p>
+
+
+<p>
+Email: rachellemarlillo@gmail.com
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Rachelle Mae Arroyo Lillo | Nursing Portfolio
+</p>
+
+</footer>
+
+
 
 </body>
 
