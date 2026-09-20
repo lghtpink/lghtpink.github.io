@@ -1,825 +1,1204 @@
 <!DOCTYPE html>
-<html lang="en-NZ">
+<html lang="en">
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rachelle Mae Arroyo Lillo | Nursing ePortfolio</title>
 
-    <meta name="theme-color" content="#f8dce6">
-    <meta name="apple-mobile-web-app-title" content="Rachelle Lillo">
-    <meta name="application-name" content="Rachelle Lillo">
+<meta property="og:title" content="Rachelle Mae Arroyo Lillo | Nursing ePortfolio">
+<meta property="og:description" content="Nursing ePortfolio">
+<meta property="og:image" content="https://rachellelillo.com/preview.jpg">
+<meta property="og:url" content="https://rachellelillo.com">
 
-    <title>Rachelle Lillo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <meta
-        name="description"
-        content="Rachelle Lillo's personal website is currently in progress. Check back soon for more."
-    >
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <meta name="author" content="Rachelle Lillo">
-    <meta name="robots" content="index, follow">
+<style>
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+html{
+scroll-behavior:smooth;
+}
 
-    <!-- Apple Home Screen Icon -->
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Rachelle Lillo">
+body{
 
-    <meta
-        property="og:description"
-        content="Rachelle Lillo's personal website is currently in progress. Check back soon for more."
-    >
+font-family:"Inter",sans-serif;
+background:white;
+color:#444;
+line-height:1.8;
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rachellelillo.com/">
-    <meta property="og:image" content="https://rachellelillo.com/profile.jpg">
+}
 
+a{
+text-decoration:none;
+color:inherit;
+}
 
-    <!-- Google Structured Data -->
+nav{
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Rachelle Lillo",
-        "url": "https://rachellelillo.com/",
-        "description": "Rachelle Lillo's personal website is currently in progress. Check back soon for more."
-    }
-    </script>
+position:sticky;
+top:0;
 
+background:rgba(255,255,255,.95);
 
-    <style>
+backdrop-filter:blur(15px);
 
-        :root {
+display:flex;
+justify-content:center;
+gap:35px;
 
-            --background: #fff5f8;
+padding:18px;
 
-            --card: #ffffff;
+border-bottom:1px solid #ececec;
 
-            --card-dark: #fce8ef;
+z-index:999;
 
-            --card-light: #fff1f5;
+}
 
-            --border: rgba(190, 105, 135, 0.14);
+nav a{
 
-            --border-light: rgba(190, 105, 135, 0.22);
+font-size:14px;
+font-weight:600;
+transition:.3s;
 
-            --text: #38262d;
+}
 
-            --secondary: #876d76;
+nav a:hover{
 
-            --muted: #aa8f98;
+color:#d88c98;
 
-        }
+}
 
+.hero{
 
-        * {
+background:#f2c6c8;
 
-            box-sizing: border-box;
+padding:90px 20px;
 
-            margin: 0;
+text-align:center;
 
-            padding: 0;
+}
 
-        }
+.profile{
 
+width:170px;
+height:170px;
 
-        html {
+border-radius:50%;
 
-            scroll-behavior: smooth;
+object-fit:cover;
 
-        }
+border:6px solid white;
 
+box-shadow:0 15px 35px rgba(0,0,0,.12);
 
-        body {
+}
 
-            min-height: 100vh;
+.hero h1{
 
-            background: var(--background);
+margin-top:30px;
 
-            color: var(--text);
+font-size:44px;
 
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "SF Pro Display",
-                "SF Pro Text",
-                "Helvetica Neue",
-                Arial,
-                sans-serif;
+font-weight:700;
 
-            -webkit-font-smoothing: antialiased;
+color:#2f2f2f;
 
-            text-rendering: optimizeLegibility;
+}
 
-        }
+.hero h3{
 
+margin-top:10px;
 
-        button,
-        input,
-        textarea,
-        select {
+font-weight:400;
 
-            font-family: inherit;
+}
 
-        }
+.hero p{
 
+margin-top:18px;
 
-        a {
+font-size:18px;
 
-            color: inherit;
+}
 
-            text-decoration: none;
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding: 12px 25px;
+    background: #f2c6c8;
+    color: #333333;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
 
-        }
+.button:hover {
+    background: #d88c98;
+    color: white;
+}
 
+section{
 
-        .container {
+max-width:1050px;
 
-            width: min(92%, 620px);
+margin:auto;
 
-            margin: 0 auto;
+padding:90px 25px;
 
-        }
+}
 
+h2{
 
-        /* ========================================
-           PROFILE
-        ======================================== */
+text-align:center;
 
-        header {
+font-size:34px;
 
-            text-align: center;
+margin-bottom:50px;
 
-            padding: 55px 0 28px;
+color:#333;
 
-        }
+}
 
+.card {
 
-        .headshot {
+    background: #fafafa;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 
-            width: 118px;
+}
 
-            height: 118px;
+.grid {
 
-            display: block;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+    align-items: stretch;
 
-            margin: 0 auto 22px;
+}
 
-            border-radius: 50%;
+.grid .card {
+    height: 100%;
+}
 
-            object-fit: cover;
+.grid .card .button {
+    align-self: flex-start;
+}
 
-            border: 1px solid rgba(190, 105, 135, 0.20);
+.value{
 
-            box-shadow:
-                0 10px 40px rgba(190, 105, 135, 0.18);
+background:#fff7f8;
 
-        }
+padding:30px;
 
+border-radius:16px;
 
-        h1 {
+text-align:center;
 
-            font-size: clamp(32px, 8vw, 42px);
+}
 
-            line-height: 1.05;
+.value h3{
 
-            font-weight: 700;
+margin-bottom:12px;
 
-            letter-spacing: -1.5px;
+}
 
-        }
+.snapshot{
 
+display:grid;
 
-        /* ========================================
-           SOCIAL MEDIA
-        ======================================== */
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 
-        .socials {
+gap:18px;
 
-            display: flex;
+margin-top:35px;
 
-            align-items: center;
+}
 
-            justify-content: center;
+.stat{
 
-            gap: 25px;
+background:#fdf4f5;
 
-            margin-top: 23px;
+border-radius:16px;
 
-        }
+padding:30px;
 
+text-align:center;
 
-        .social-link {
+}
 
-            width: 30px;
+.stat h1{
 
-            height: 30px;
+font-size:38px;
 
-            display: flex;
+color:#d88c98;
 
-            align-items: center;
+}
 
-            justify-content: center;
+footer{
 
-            color: #6f4d59;
+background:#f2c6c8;
 
-            opacity: 0.88;
+text-align:center;
 
-            transition:
-                transform 0.2s ease,
-                opacity 0.2s ease;
+padding:35px;
 
-        }
+margin-top:80px;
 
+}
 
-        .social-link:hover {
+@media(max-width:700px){
 
-            opacity: 1;
+nav{
 
-            transform: translateY(-2px);
+gap:15px;
 
-        }
+flex-wrap:wrap;
 
+}
 
-        .social-link svg {
+.hero h1{
 
-            width: 25px;
+font-size:34px;
 
-            height: 25px;
+}
 
-            fill: currentColor;
+}
 
-        }
-
-
-        /* ========================================
-           MAIN CARD
-        ======================================== */
-
-        .property-card {
-
-            margin-top: 22px;
-
-            padding: 8px;
-
-            background: var(--card);
-
-            border: 1px solid var(--border);
-
-            border-radius: 22px;
-
-            box-shadow:
-                0 20px 60px rgba(190, 105, 135, 0.12);
-
-        }
-
-
-        /* ========================================
-           WELCOME CONTENT
-        ======================================== */
-
-        .tab-content {
-
-            display: block;
-
-            padding: 0 24px 14px;
-
-        }
-
-
-        .section-title {
-
-            margin-top: 14px;
-            
-            margin-bottom: 14px;
-
-            font-size: 20px;
-
-            font-weight: 650;
-
-            letter-spacing: -0.4px;
-
-        }
-
-
-        .empty-message {
-
-            color: var(--secondary);
-
-            font-size: 15px;
-
-            line-height: 1.55;
-
-        }
-
-
-        /* ========================================
-           ARROW OUTSIDE MAIN BOX
-        ======================================== */
-
-        .services-toggle-wrapper {
-
-            display: flex;
-
-            justify-content: center;
-
-            padding: 18px 0 0;
-
-        }
-
-
-        .services-toggle {
-
-            width: 48px;
-
-            height: 48px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            background: #ffffff;
-
-            border: 1px solid rgba(190, 105, 135, 0.18);
-
-            border-radius: 50%;
-
-            cursor: pointer;
-
-            box-shadow:
-                0 8px 25px rgba(190, 105, 135, 0.15);
-
-            transition:
-                background 0.25s ease,
-                border-color 0.25s ease,
-                transform 0.25s ease;
-
-        }
-
-
-        .services-toggle:hover {
-
-            background: #fce8ef;
-
-            border-color:
-                rgba(190, 105, 135, 0.28);
-
-        }
-
-
-        .services-toggle:active {
-
-            transform: scale(0.93);
-
-        }
-
-
-        .chevron {
-
-            width: 15px;
-
-            height: 15px;
-
-            border-right: 2px solid #9d6f7e;
-
-            border-bottom: 2px solid #9d6f7e;
-
-            transform:
-                rotate(45deg)
-                translate(-2px, -2px);
-
-            transition:
-                transform 0.45s cubic-bezier(.4, 0, .2, 1);
-
-        }
-
-
-        .services-toggle.open .chevron {
-
-            transform:
-                rotate(225deg)
-                translate(-2px, -2px);
-
-        }
-
-
-        /* ========================================
-           EMPTY BOX REVEAL
-        ======================================== */
-
-        .services-reveal {
-
-            display: grid;
-
-            grid-template-rows: 0fr;
-
-            opacity: 0;
-
-            margin-top: 0;
-
-            transition:
-                grid-template-rows 0.55s cubic-bezier(.4, 0, .2, 1),
-                opacity 0.35s ease,
-                margin-top 0.55s cubic-bezier(.4, 0, .2, 1);
-
-        }
-
-
-        .services-reveal.open {
-
-            grid-template-rows: 1fr;
-
-            opacity: 1;
-
-            margin-top: 42px;
-
-        }
-
-
-        .services-inner {
-
-            min-height: 0;
-
-            overflow: hidden;
-
-        }
-
-
-        /* ========================================
-           EMPTY LOWER BOX
-        ======================================== */
-
-        .appraisal-card {
-
-            min-height: 100px;
-
-            background: #ffffff;
-
-            border: 1px solid var(--border);
-
-            border-radius: 22px;
-
-            overflow: hidden;
-
-            box-shadow:
-                0 18px 50px rgba(190, 105, 135, 0.10);
-
-        }
-
-
-        /* ========================================
-           FOOTER
-        ======================================== */
-
-        footer {
-
-            padding: 35px 0 45px;
-
-            color: #aa8f98;
-
-            font-size: 12px;
-
-            text-align: center;
-
-        }
-
-
-        /* ========================================
-           MOBILE
-        ======================================== */
-
-        @media (max-width: 480px) {
-
-            header {
-
-                padding-top: 42px;
-
-            }
-
-
-            .headshot {
-
-                width: 105px;
-
-                height: 105px;
-
-            }
-
-
-            .property-card,
-            .appraisal-card {
-
-                border-radius: 19px;
-
-            }
-
-        }
-
-    </style>
+</style>
 
 </head>
 
-
 <body>
 
+<nav>
 
-    <main class="container">
+<a href="#welcome">Welcome</a>
 
+<a href="#employment">Employment</a>
 
-        <!-- ========================================
-             PROFILE
-        ======================================== -->
+<a href="#reflections">Reflections</a>
 
-        <header>
+<a href="#competence">Competence</a>
 
-            <img
-                class="headshot"
-                src="profile.jpg"
-                alt="Rachelle Lillo"
-            >
+<a href="#culture">Te Tiriti</a>
 
+<a href="#development">Development</a>
 
-            <h1>
-                Rachelle Lillo
-            </h1>
+<a href="#future">Future</a>
 
+<a href="#contact">Contact</a>
 
-            <!-- SOCIAL MEDIA -->
+</nav>
 
-            <div class="socials">
+<div class="hero">
 
+<img src="profile.jpg" class="profile">
 
-                <!-- INSTAGRAM -->
+<h1>Rachelle Mae Arroyo Lillo</h1>
 
-                <a
-                    class="social-link"
-                    href="https://instagram.com/RachLillo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Instagram"
-                >
+<h3>Nursing ePortfolio</h3>
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
+<p>
+Bachelor of Nursing • Manukau Institute of Technology
+</p>
 
-                        <rect
-                            x="3"
-                            y="3"
-                            width="18"
-                            height="18"
-                            rx="5"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="1.9"
-                        />
+<a href="#employment" class="button">
 
-                        <circle
-                            cx="12"
-                            cy="12"
-                            r="4.2"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="1.9"
-                        />
+View Employment Package
 
-                        <circle
-                            cx="17.5"
-                            cy="6.5"
-                            r="1.2"
-                        />
+</a>
 
-                    </svg>
+</div>
 
-                </a>
+<section id="welcome">
 
+<h2>Nau mai, haere mai • Welcome</h2>
 
-                <!-- TIKTOK -->
+<div class="card">
 
-                <a
-                    class="social-link"
-                    href="https://www.tiktok.com/@RachLillo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="TikTok"
-                >
+<p>
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
+Kia ora, my name is <strong>Rachelle Mae Arroyo Lillo</strong>, and welcome to my nursing ePortfolio.
 
-                        <path
-                            d="M15.2 3c.3 2.5 1.7 4.2 4.2 4.4v3.1c-1.7-.1-3.1-.6-4.2-1.5v6.5c0 3.7-2.4 5.7-5.6 5.7-3 0-5.6-2.1-5.6-5.2 0-3.4 2.8-5.4 6.1-5.1v3.2c-1.7-.3-3 .5-3 1.9 0 1.2 1 2.1 2.3 2.1 1.5 0 2.6-.9 2.6-2.9V3h3.2z"
-                        />
+</p>
 
-                    </svg>
+<br>
 
-                </a>
+<p>
 
+I am a final year Bachelor of Nursing student at Manukau Institute of Technology with a genuine passion for providing compassionate, person centred care. My background in Psychology and my experiences across mental health, paediatric, medical, surgical, and community placements have shaped the nurse I am today.
 
-                <!-- YOUTUBE -->
+</p>
 
-                <a
-                    class="social-link"
-                    href="https://www.youtube.com/@RaeandCalix"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="YouTube"
-                >
+<br>
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
+<p>
 
-                        <path
-                            d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2C2 9 2 12 2 12s0 3 .4 4.8a2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2c.4-1.8.4-4.8.4-4.8s0-3-.4-4.8z"
-                        />
+This portfolio showcases my professional journey throughout the Bachelor of Nursing programme. It brings together my employment package, clinical reflections, evidence of learning, and examples of how I apply Te Tiriti o Waitangi and culturally safe practice throughout my clinical experiences.
 
-                        <path
-                            d="m10 15.5 5-3.5-5-3.5v7z"
-                            fill="#ffffff"
-                        />
+</p>
 
-                    </svg>
+<br>
 
-                </a>
+<p>
 
+My nursing kaupapa is grounded in compassion, partnership, respect, and lifelong learning. I strive to provide safe, evidence informed care that recognises every person's unique values, culture, and health journey.
 
-            </div>
+</p>
 
-        </header>
+</div>
 
+</section>
 
+<section>
 
-        <!-- ========================================
-             WELCOME BOX
-        ======================================== -->
+<h2>My Nursing Values</h2>
 
-        <section class="property-card">
+<div class="grid">
 
+<div class="value">
 
-            <div
-                id="welcome"
-                class="tab-content"
-            >
+<h3>Compassion</h3>
 
-                <h2 class="section-title">
-                    Hi, I'm Rachelle
-                </h2>
+<p>
 
+Providing kind, respectful, and person centred care while supporting patients and whānau during vulnerable moments.
 
-                <p class="empty-message">
-                    This website is currently in progress.
-                </p>
+</p>
 
-            </div>
+</div>
 
+<div class="value">
 
-        </section>
+<h3>Partnership</h3>
 
+<p>
 
+Working alongside patients, whānau, and colleagues to achieve the best possible health outcomes.
 
-        <!-- ========================================
-             ARROW OUTSIDE MAIN BOX
-        ======================================== -->
+</p>
 
-        <div class="services-toggle-wrapper">
+</div>
 
-            <button
-                class="services-toggle"
-                id="servicesToggle"
-                type="button"
-                aria-label="Show more"
-                aria-expanded="false"
-                aria-controls="propertyServices"
-                onclick="toggleServices()"
-            >
+<div class="value">
 
-                <span class="chevron"></span>
+<h3>Lifelong Learning</h3>
 
-            </button>
+<p>
 
-        </div>
+Continuously developing my clinical knowledge through reflection, feedback, and evidence based practice.
 
+</p>
 
+</div>
 
-        <!-- ========================================
-             EMPTY LOWER BOX
-        ======================================== -->
+<div class="value">
 
-        <section
-            class="services-reveal"
-            id="propertyServices"
-            aria-hidden="true"
-        >
+<h3>Cultural Safety</h3>
 
-            <div class="services-inner">
+<p>
 
-                <div class="appraisal-card">
-                </div>
+Delivering inclusive care guided by Te Tiriti o Waitangi and respect for every person's identity and culture.
 
-            </div>
+</p>
 
-        </section>
+</div>
 
+</div>
 
-    </main>
+</section>
 
+<section>
 
+<h2>Clinical Snapshot</h2>
 
-    <!-- ========================================
-         FOOTER
-    ======================================== -->
+<div class="snapshot">
 
-    <footer>
+<div class="stat">
 
-        © 2026 Rachelle Lillo
+<h1>4</h1>
 
-    </footer>
+<p>Clinical Placements</p>
 
+</div>
 
+<div class="stat">
 
-    <!-- ========================================
-         JAVASCRIPT
-    ======================================== -->
+<h1>3+</h1>
 
-    <script>
+<p>Years Clinical Research Experience</p>
 
-        function toggleServices() {
+</div>
 
-            const services =
-                document.getElementById('propertyServices');
+<div class="stat">
 
-            const toggle =
-                document.getElementById('servicesToggle');
+<h1>1</h1>
 
+<p>Degree in Psychology</p>
 
-            const isOpen =
-                services.classList.contains('open');
+</div>
 
+<div class="stat">
 
-            if (isOpen) {
+<h1>2026</h1>
 
-                services.classList.remove('open');
+<p>Bachelor of Nursing Completion</p>
 
-                toggle.classList.remove('open');
+</div>
 
-                toggle.setAttribute(
-                    'aria-expanded',
-                    'false'
-                );
+</div>
 
-                toggle.setAttribute(
-                    'aria-label',
-                    'Show more'
-                );
+</section>
 
-                services.setAttribute(
-                    'aria-hidden',
-                    'true'
-                );
+<section id="employment">
 
-            } else {
+<h2>Employment Package</h2>
 
-                services.classList.add('open');
+<div class="card">
 
-                toggle.classList.add('open');
+<p>
+This section contains my complete graduate nursing employment package prepared for the MIT Transition Healthcare Graduate Registered Nurse application. These documents demonstrate my professional readiness, clinical experiences, nursing values, and commitment to culturally safe practice.
+</p>
 
-                toggle.setAttribute(
-                    'aria-expanded',
-                    'true'
-                );
+</div>
 
-                toggle.setAttribute(
-                    'aria-label',
-                    'Hide more'
-                );
 
-                services.setAttribute(
-                    'aria-hidden',
-                    'false'
-                );
+<div class="grid">
 
-            }
 
-        }
+<div class="card">
 
-    </script>
+<h3>Curriculum Vitae</h3>
 
+<p>
+A summary of my education, clinical placements, employment history, professional skills, and achievements throughout my nursing journey.
+</p>
 
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"a0c67beb99074da4b9e8624216f99946","r":1}' crossorigin="anonymous"></script>
+<br>
+
+<a href="CV.pdf" target="_blank" class="button">
+View CV
+</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Cover Letter</h3>
+
+<p>
+My Graduate Registered Nurse application outlining my clinical preferences, professional strengths, and alignment with MIT Healthcare values.
+</p>
+
+<br>
+
+<a href="Cover Letter.pdf" target="_blank" class="button">
+View Cover Letter
+</a>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Nursing Philosophy</h3>
+
+<p>
+My personal nursing philosophy describing my values, beliefs, approach to care, and incorporation of Te Tiriti o Waitangi principles.
+</p>
+
+<br>
+
+<a href="Nursing Philosophy.pdf" target="_blank" class="button">
+View Philosophy
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section id="reflections">
+
+<h2>Clinical Reflections</h2>
+
+
+<div class="card">
+
+<h3>
+Developing Assessment and Therapeutic Skills in Child and Adolescent Mental Health
+</h3>
+
+<p>
+<strong>Haumaru Orite • Child and Family Unit, Starship, Auckland City Hospital</strong>
+</p>
+
+<br>
+
+<p>
+During my placement in the Child and Family Unit, I supported adolescents experiencing acute mental distress. This experience highlighted the importance of creating safe spaces where young people feel respected, listened to, and supported.
+</p>
+
+<br>
+
+<p>
+Through therapeutic communication, I developed my ability to build trusting relationships with tamariki and whānau. I learned that effective mental health nursing involves more than completing assessments. It requires patience, empathy, and understanding each person's unique experiences.
+</p>
+
+<br>
+
+<p>
+I progressed from observing Mental State Examinations to completing comprehensive assessments and structured risk assessments under supervision. This strengthened my confidence in clinical reasoning and reinforced the importance of recovery focused and least restrictive care.
+</p>
+
+<br>
+
+<p>
+This placement contributed to my growth in <strong>Whanaungatanga, Manaakitanga, and Pūkengatanga</strong> by developing my communication skills, clinical judgement, and ability to provide safe and supportive care.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+Recognising Deterioration and Advocating for Patient Safety in Paediatric Medical Care
+</h3>
+
+<p>
+<strong>Kidz First Medical Ward • Middlemore Hospital</strong>
+</p>
+
+<br>
+
+<p>
+My placement at Kidz First strengthened my ability to assess and respond to the changing needs of tamariki with a range of acute and chronic conditions.
+</p>
+
+<br>
+
+<p>
+A key learning experience was developing confidence in recognising early signs of deterioration through systematic assessment and use of the Early Warning Score. I learned the importance of acting promptly, communicating concerns clearly, and seeking support when required.
+</p>
+
+<br>
+
+<p>
+Working alongside Registered Nurses and the wider multidisciplinary team strengthened my understanding of advocacy and accountability. I recognised that safe nursing care involves not only clinical knowledge but also ensuring children and their whānau feel included and supported throughout their healthcare journey.
+</p>
+
+<br>
+
+<p>
+This experience developed my skills in <strong>clinical reasoning, prioritisation, communication, and patient advocacy</strong> while reinforcing the importance of family centred care.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+Supporting Recovery Through Assessment and Education in Paediatric Surgical Care
+</h3>
+
+<p>
+<strong>Orthopaedics Ward 24A • Starship, Auckland City Hospital</strong>
+</p>
+
+<br>
+
+<p>
+During my surgical placement, I developed my understanding of post operative nursing care for tamariki following orthopaedic procedures. I focused on assessment, pain management, wound care, and supporting recovery.
+</p>
+
+<br>
+
+<p>
+Completing wound assessments, monitoring recovery progress, and assessing pain using validated tools strengthened my attention to detail and ability to identify changes requiring further review.
+</p>
+
+<br>
+
+<p>
+I also supported tamariki and whānau through education about wound care, mobility, and recovery expectations. This showed me the importance of clear communication and ensuring families feel confident and involved in the care process.
+</p>
+
+<br>
+
+<p>
+This placement strengthened my development in <strong>Manaakitanga and Pūkengatanga</strong> by combining clinical skills with compassionate, family centred communication.
+</p>
+
+</div>
+
+
+</section>
+
+<section id="competence">
+
+<h2>Evidence of Clinical Competence</h2>
+
+
+<div class="card">
+
+<p>
+Throughout my Bachelor of Nursing programme, I have developed my clinical skills through supervised practice, feedback, and reflective learning. The following examples demonstrate my progression towards safe and effective Registered Nurse practice.
+</p>
+
+</div>
+
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>Mental Health Assessment and Therapeutic Communication</h3>
+
+<p>
+During my Child and Family Mental Health placement at Haumaru Orite, I developed confidence in completing Mental State Examinations and structured risk assessments under supervision. This experience strengthened my ability to communicate therapeutically, build rapport, and contribute to recovery focused care planning.
+</p>
+
+<br>
+
+<p>
+<strong>Related Pou:</strong><br>
+Pou 3: Whanaungatanga & communication<br>
+Pou 4: Pūkengatanga & evidence-informed practice<br>
+Pou 5: Manaakitanga & people-centred care
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Recognising and Responding to Deterioration</h3>
+
+<p>
+During my paediatric medical placement at Kidz First, I developed my ability to recognise changes in a child's condition through systematic assessment and Early Warning Score observations. I learned the importance of timely escalation, clear communication, and advocating for patient safety.
+</p>
+
+<br>
+
+<p>
+<strong>Related Pou:</strong><br>
+Pou 4: Pūkengatanga & evidence-informed practice<br>
+Pou 5: Manaakitanga & people-centred care<br>
+Pou 6: Rangatiratanga & leadership
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Community Health Support and Whānau Education</h3>
+
+<p>
+During my community focused placement, I developed skills in post operative monitoring, pain assessment, and providing education to tamariki and whānau. This strengthened my understanding of safe recovery and family centred care.
+</p>
+
+<br>
+
+<p>
+<strong>Related Pou:</strong><br>
+Pou 1: Māori health & Kawa Whakaruruhau<br>
+Pou 3: Whanaungatanga & communication<br>
+Pou 5: Manaakitanga & people-centred care
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Medication Safety</h3>
+
+<p>
+Across my clinical placements, I developed confidence in medication administration under Registered Nurse supervision. I applied the principles of safe medication practice, including checking the rights of medication administration and monitoring patient responses.
+</p>
+
+<br>
+
+<p>
+This reinforced the importance of accuracy, accountability, and patient safety in nursing practice.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+<h2 style="margin-top:70px;">Clinical Evidence Documents</h2>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>Child and Family Mental Health Feedback</h3>
+
+<p>
+Clinical feedback demonstrating my development in therapeutic communication, assessment skills, professional behaviour, and mental health nursing practice.
+</p>
+
+<br>
+
+<a href="Mental Health Feedback.pdf" target="_blank" class="button">
+View Evidence
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Paediatric Medical Feedback</h3>
+
+<p>
+Clinical feedback demonstrating my progress in assessment, prioritisation, escalation of care, and working alongside the multidisciplinary team.
+</p>
+
+<br>
+
+<a href="Medical Feedback.pdf" target="_blank" class="button">
+View Evidence
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Community / Primary Health Feedback</h3>
+
+<p>
+Clinical feedback demonstrating my development in post operative care, patient education, communication, and safe nursing practice.
+</p>
+
+<br>
+
+<a href="Community Feedback.pdf" target="_blank" class="button">
+View Evidence
+</a>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Record of Learning</h3>
+
+<p>
+A collection of my clinical learning achievements, reflections, and progress throughout the Bachelor of Nursing programme.
+</p>
+
+<br>
+
+<a href="Record of Learning.pdf" target="_blank" class="button">
+View Evidence
+</a>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="culture">
+
+<h2>Cultural Safety & Te Tiriti o Waitangi</h2>
+
+
+
+<div class="card">
+
+
+<p>
+As a nurse in Aotearoa New Zealand, I recognise Te Tiriti o Waitangi as fundamental to providing safe, equitable, and culturally responsive healthcare. Kawa Whakaruruhau guides my commitment to understanding the impact of culture, power, and personal beliefs on nursing practice.
+</p>
+
+
+<br>
+
+
+<p>
+I understand that culturally safe care begins with self reflection and recognising each person as an individual with their own values, experiences, beliefs, and identity. Throughout my clinical placements, I have aimed to provide care that respects patients and whānau while supporting their involvement in healthcare decisions.
+</p>
+
+
+</div>
+
+
+
+
+<div class="grid">
+
+
+<div class="value">
+
+<h3>Partnership</h3>
+
+<p>
+Working alongside Māori patients and whānau through respectful communication, shared decision making, and recognising their knowledge of their own health experiences.
+</p>
+
+</div>
+
+
+
+
+<div class="value">
+
+<h3>Active Protection</h3>
+
+<p>
+Supporting equitable health outcomes by providing culturally safe care, reflecting on personal biases, and advocating against barriers to healthcare.
+</p>
+
+</div>
+
+
+
+
+<div class="value">
+
+<h3>Participation</h3>
+
+<p>
+Encouraging Māori patients and whānau to actively participate in planning and decisions about their healthcare.
+</p>
+
+</div>
+
+
+
+
+<div class="value">
+
+<h3>Options</h3>
+
+<p>
+Respecting individual preferences and supporting access to healthcare pathways that align with cultural values and needs.
+</p>
+
+</div>
+
+
+
+
+<div class="value">
+
+<h3>Tino Rangatiratanga</h3>
+
+<p>
+Respecting Māori self determination and supporting patients to have control and involvement in decisions affecting their health and wellbeing.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="card" style="margin-top:30px;">
+
+<p>
+These principles guide my nursing practice across mental health, medical, surgical, and community settings. I recognise that culturally safe practice requires ongoing learning, humility, and reflection. As a graduate nurse, I will continue developing my understanding of Te Tiriti o Waitangi and apply these principles to provide respectful and equitable care.
+</p>
+
+</div>
+
+
+</section>
+
+<section id="development">
+
+<h2>Professional Development & Achievements</h2>
+
+
+<div class="card">
+
+<p>
+My journey into nursing has been shaped by academic learning, clinical experiences, and professional opportunities outside of healthcare. These experiences have developed my communication skills, accountability, attention to detail, and commitment to continuous improvement.
+</p>
+
+</div>
+
+
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>Academic Achievements</h3>
+
+<p>
+
+<strong>Graduated with Honours (2022)</strong><br>
+Recognised for academic achievement and commitment to maintaining high standards of learning.
+
+</p>
+
+<br>
+
+<p>
+
+<strong>Best in Research (2019)</strong><br>
+Recognised for research ability, analytical thinking, and effective use of information.
+
+</p>
+
+<br>
+
+<p>
+
+<strong>Young Mathematicians In-House Intensive Training Programme & International Kangaroo Mathematics Competition (2018 to 2019)</strong><br>
+Developed logical thinking, problem solving skills, and the ability to perform under pressure.
+
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Clinical Research Experience</h3>
+
+<p>
+
+As a Clinical Trials Administrative Assistant at Optimal Clinical Trials, I have developed an understanding of ethical healthcare practice, confidentiality, accuracy, and professional responsibility.
+
+</p>
+
+<br>
+
+<p>
+
+Working with clinical trial documentation and participant information has strengthened my attention to detail and reinforced the importance of safe, evidence based healthcare.
+
+</p>
+
+<br>
+
+<p>
+
+These skills complement my nursing practice by supporting accurate documentation, patient safety, and accountable decision making.
+
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Communication and Customer Service Experience</h3>
+
+<p>
+
+My previous customer service roles have strengthened my ability to communicate with people from diverse backgrounds, remain calm under pressure, and create positive experiences for others.
+
+</p>
+
+<br>
+
+<p>
+
+Working with children and families through Dragon Quest Lilliputt Mini Golf also developed my patience, adaptability, and ability to create a welcoming environment.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="future">
+
+<h2>Future Goals as a Graduate Nurse</h2>
+
+
+<div class="card">
+
+
+<p>
+
+I aspire to become a Registered Nurse who provides compassionate, safe, and culturally responsive care. I want patients and their whānau to feel respected, supported, and confident throughout their healthcare journey.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+During my first year as a Graduate Nurse, I aim to continue developing my confidence in clinical assessment, prioritisation, medication safety, and evidence informed decision making. I also hope to strengthen my ability to provide effective health education, advocate for patients, and contribute positively within multidisciplinary teams.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+While I have a strong interest in child and adolescent mental health, paediatric care, and community health, I am committed to continuing my learning across all areas of nursing practice. I believe every experience provides an opportunity to grow as a safe, reflective, and compassionate practitioner.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+My goal is to become a nurse who is trusted by patients, respected by colleagues, and committed to making a meaningful difference within the communities I serve.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+
+<div class="card" style="text-align:center;">
+
+
+<h3>
+Rachelle Mae Arroyo Lillo
+</h3>
+
+
+<p>
+Bachelor of Nursing Student<br>
+Manukau Institute of Technology
+</p>
+
+
+<br>
+
+
+<p>
+Email: rachellemaelillo@gmail.com
+</p>
+
+
+<br>
+
+
+<p>
+Thank you for taking the time to view my nursing portfolio.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Rachelle Mae Arroyo Lillo | Nursing Portfolio
+</p>
+
+<p>
+Built as part of my Bachelor of Nursing employment portfolio
+</p>
+
+</footer>
+
 
 </body>
 
